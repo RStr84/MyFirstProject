@@ -17,6 +17,7 @@ namespace MyFirstProject
             // Auskommentieren = strg + #
 
             // Datatypes
+            //
             DataTypes intType = new DataTypes();
             intType.TypeInteger();
             
