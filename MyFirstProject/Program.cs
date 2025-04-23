@@ -40,6 +40,12 @@ namespace MyFirstProject
             op.StartOperators();
             Operators addNumber = new Operators();
             addNumber.Add();
+            Operators divNumber = new Operators();
+            divNumber.Div();
+            Operators stringAdd = new Operators();
+            stringAdd.StringAdd();
+            Operators increment = new Operators();
+            increment.IncrementInCW();
 
 
 
