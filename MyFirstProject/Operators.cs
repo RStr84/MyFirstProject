@@ -77,7 +77,9 @@ namespace MyFirstProject
         Bsp.: int number1 = 10 % 2 => 0;
               int number2 = 10 % 3 => 1;
         */
+
         
-         
+
+
     }
 }

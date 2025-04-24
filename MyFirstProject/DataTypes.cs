@@ -11,6 +11,22 @@ namespace MyFirstProject
 {
     internal class DataTypes
     {
+
+        /* "Var":
+           Anstatt der Variablen kann auch die Konstante "var" verwendet werden. Es ist für die Readability
+           darauf zu achten, dass "var" gerade bei vielen Zeilen Code nicht leserlich ist und man immer erst
+           nachvollziehen muss, welchen Datentyp "var" gerade darstellt. Deswegen sind eindeutige Variablennamen
+           mit genauer Datentypkennzeichnung zu empfehlen.
+
+           "Const":
+           Mit "const" wird eine Konstante deklariert, die nicht mehr verändert werden kann. 
+           
+
+
+
+
+        */
+
         public void TypeInteger() {
 
             Console.WriteLine("\"Integer -> Datentypbereiche\"");
