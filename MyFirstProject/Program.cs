@@ -47,6 +47,12 @@ namespace MyFirstProject
             Operators increment = new Operators();
             increment.IncrementInCW();
 
+            // YouTube Practice
+            DataTypes youTube1 = new DataTypes();
+            youTube1.YtPractice();
+            DataTypes calcuate = new DataTypes();
+            calcuate.Calculator();
+
 
 
 
