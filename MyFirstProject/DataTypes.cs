@@ -32,7 +32,6 @@ namespace MyFirstProject
         {
 
             Console.WriteLine("\"Integer -> Datentypbereiche\"");
-            Console.WriteLine();
 
             int age = 40;                   // => Initialization und Declaration
             //int age = 50;                 // => Assignment
@@ -65,7 +64,6 @@ namespace MyFirstProject
         public void TypeTextBased()
         {
             Console.WriteLine("\"Textbasierte Datentypen\"");
-            Console.WriteLine();
 
             string name = "Raphael";
             // "" bei mehreren Zeichen
@@ -80,7 +78,6 @@ namespace MyFirstProject
         {
 
             Console.WriteLine("\"Konvertierung String zu Int\"");
-            Console.WriteLine();
 
             string textAge = "40";
             int convertedAge = Convert.ToInt32(textAge);
@@ -110,7 +107,6 @@ namespace MyFirstProject
         public void TypeBoolean()
         {
             Console.WriteLine("\"Boolean\"");
-            Console.WriteLine();
 
             bool isTrue = true;
             bool isFalse = false;
@@ -120,99 +116,5 @@ namespace MyFirstProject
 
         }
 
-        public void YtPractice()
-        {
-            Console.WriteLine("\"YouTube Practice\"");
-            Console.WriteLine();
-
-            int number1 =  25;
-            int number2 = 5;
-            int remainder = number1 % number2;
-            // Declarstion and Initialization of variables
-            Console.WriteLine($"Aufgabe: Modulo(25/5) => {remainder}");
-            number1 = 67;
-            remainder = number1 % number2;
-            // Reassigning of variables
-            Console.WriteLine($"Aufgabe: Modulo(67/5) => {remainder}");
-            Console.WriteLine();
-
-            Console.WriteLine("Aufgabe: Input/Output/If-Statements");
-            Console.Write("Wie ist dein Name? ");
-            string name = Console.ReadLine();
-            Console.Write("Wie alt bist du? ");
-            string ageInput = Console.ReadLine();
-            int age = Convert.ToInt32(ageInput);
-            // Console.ReadLine() gibt immer einen String zurück, daher muss dieser konvertiert werden
-            // int age = Convert.ToInt32(Console.ReadLine()); Variante als Einzeiler
-            Console.WriteLine($"Dein Name lautet {name} und du bist {age} Jahre alt!");
-            // ==, !=, >, <, >=, <=, || (or), && (and)
-            if (age < 0 || age > 120)
-            {
-                Console.WriteLine("Ungültiges Alter!");
-            }
-            else
-            {
-                if (age >= 18)
-                {
-                    Console.WriteLine("Du bist volljährig!");
-                }
-                else
-                {
-                    Console.WriteLine("Du bist minderjährig!");
-                }
-            }
-            Thread.Sleep(3000);
-            // Thread.Sleep(3000) = 3 Sekunden warten
-            
-        }
-
-        public void Calculator()
-        {
-            Console.WriteLine("\"Taschenrechner\"");
-            Console.WriteLine();
-            Console.Write("Gib eine Zahl ein: ");
-            string num1Input = Console.ReadLine();
-            int num1 = Convert.ToInt32(num1Input);
-            Console.Write("Gib eine Zahl ein: ");
-            string num2Input = Console.ReadLine();
-            int num2 = Convert.ToInt32(num2Input);
-            Console.Write("Gib einen mathematischen Operator ein! ");
-            string operatorInput = Console.ReadLine();
-
-            if (operatorInput == "+")
-            {
-                int result = num1 + num2;
-                Console.WriteLine($"Das Ergebnis ist: {result}");
-            }
-            else if (operatorInput == "-")
-            {
-                int result = num1 - num2;
-                Console.WriteLine($"Das Ergebnis ist: {result}");
-            }
-            else if (operatorInput == "*")
-            {
-                int result = num1 * num2;
-                Console.WriteLine($"Das Ergebnis ist: {result}");
-            }
-            else if (operatorInput == "/")
-            {
-                if (num2 != 0)
-                {
-                    double result = (double)num1 / num2;
-                    Console.WriteLine($"Das Ergebnis ist: {result}");
-                }
-                else
-                {
-                    Console.WriteLine("Division durch Null ist nicht erlaubt!");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Ungültiger Operator!");
-            }
-
-
         }
     }
-
-}

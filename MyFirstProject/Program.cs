@@ -26,6 +26,8 @@ namespace MyFirstProject
             // Auskommentieren = strg + #
 
             // Datatypes
+            Console.WriteLine("Datatypes");
+            Console.WriteLine();
             DataTypes intType = new DataTypes();
             intType.TypeInteger();
             //DataTypes textType = new DataTypes();
@@ -36,8 +38,8 @@ namespace MyFirstProject
             boolType.TypeBoolean();
 
             // Operators
-            Operators op = new Operators();
-            op.StartOperators();
+            Console.WriteLine("Operators");
+            Console.WriteLine();
             Operators addNumber = new Operators();
             addNumber.Add();
             Operators divNumber = new Operators();
@@ -46,12 +48,18 @@ namespace MyFirstProject
             stringAdd.StringAdd();
             Operators increment = new Operators();
             increment.IncrementInCW();
+            Operators modulo = new Operators();
+            modulo.Modulo();
 
-            // YouTube Practice
-            DataTypes youTube1 = new DataTypes();
-            youTube1.YtPractice();
-            DataTypes calcuate = new DataTypes();
-            calcuate.Calculator();
+            // IfElseSwitchCase
+            Console.WriteLine("If/Else & Switch/Case");
+            Console.WriteLine();
+            IfElseSwitchCase ifElse = new IfElseSwitchCase();
+            ifElse.IfElse();
+            IfElseSwitchCase calculator = new IfElseSwitchCase();
+            calculator.Calculator();
+            IfElseSwitchCase switchCase = new IfElseSwitchCase();
+
 
 
 

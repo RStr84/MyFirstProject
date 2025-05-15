@@ -9,17 +9,11 @@ namespace MyFirstProject
 {
     internal class Operators
     {
-
-        public void StartOperators()
-        {
-            Console.WriteLine("Operators");
-            Console.WriteLine();
-        }
-
+        
         public void StringAdd()
         {
 
-            Console.WriteLine("Beispiel: Stringverkettung mit Addition");
+            Console.WriteLine("\"Beispiel: Stringverkettung mit Addition\"");
             string name = "Raphael";
             Console.WriteLine($"Vorname: {name}");
             name += " Straschewski";
@@ -33,7 +27,7 @@ namespace MyFirstProject
         public void Add()
         {
 
-            Console.WriteLine("Beispiel: Addition");
+            Console.WriteLine("\"Beispiel: Addition\"");
             int number = 40;
             Console.WriteLine($"Ausgangswert: {number}");
             number++;
@@ -48,7 +42,7 @@ namespace MyFirstProject
         public void Div()
         {
 
-            Console.WriteLine("Beispiel: Division mit \"double\"");
+            Console.WriteLine("\"Beispiel: Division mit Double\"");
             double number = 23;
             Console.WriteLine($"Ausgangswert: {number}");
             number /= 2;
@@ -60,7 +54,7 @@ namespace MyFirstProject
         public void IncrementInCW()
         {
 
-            Console.WriteLine("Beispiel: Inkremtierung in CW");
+            Console.WriteLine("\"Beispiel: Inkremtierung in CW\"");
             int i = 0;
             int j = 0;
             Console.WriteLine($"Ausgangswerte i und j: 0");
@@ -72,13 +66,29 @@ namespace MyFirstProject
 
         }
 
+        public void Modulo()
+        {
+            Console.WriteLine("\"Beispiel: Modulo\"");
+            int number1 = 25;
+            int number2 = 5;
+            int remainder = number1 % number2;
+            // Declaration and Initialization of variables
+            Console.WriteLine($"Aufgabe: Modulo(25/5) => {remainder}");
+            number1 = 67;
+            remainder = number1 % number2;
+            // Reassigning of variables
+            Console.WriteLine($"Aufgabe: Modulo(67/5) => {remainder}");
+            Console.WriteLine();
+
+        }
+
         /* Notizen
         % Modulo-Operator zur Bestimmung des Restwerts
         Bsp.: int number1 = 10 % 2 => 0;
               int number2 = 10 % 3 => 1;
         */
 
-        
+
 
 
     }
